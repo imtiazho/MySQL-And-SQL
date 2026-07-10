@@ -33,3 +33,10 @@ VALUES(101, 'Imtiaz', 'Male', 18, 3.44, 'Lakshmipur');
 // Another way
 INSERT INTO student_details
 VALUES(101, 'Imtiaz', 'Male', 18, 3.44, 'Lakshmipur');
+
+// Multiline approach
+INSERT INTO student_details
+VALUES
+(103, 'Imtiaz', 'Male', 18, 3.44, 'Lakshmipur'), (104, 'Sajjad', 'Male', 18, 3.45, 'Lakshmipur'),
+(105, 'Hossain', 'Male', 18, 3.56, 'Lakshmipur'), (106, 'Imtiaz', 'Male', 18, 3.23, 'Lakshmipur');
+

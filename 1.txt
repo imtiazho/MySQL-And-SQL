@@ -24,3 +24,12 @@ CREATE TABLE student (
 RENAME TABLE student TO student_details;
 
 DROP TABLE student_details;
+
+// One way
+INSERT INTO student_details
+(Roll, Name,Gender, Age, GPA, City)
+VALUES(101, 'Imtiaz', 'Male', 18, 3.44, 'Lakshmipur');
+
+// Another way
+INSERT INTO student_details
+VALUES(101, 'Imtiaz', 'Male', 18, 3.44, 'Lakshmipur');

@@ -20,3 +20,7 @@ CREATE TABLE student (
     City varchar(15),
     PRIMARY KEY(Roll)
 );
+
+RENAME TABLE student TO student_details;
+
+DROP TABLE student_details;

@@ -1,0 +1,22 @@
+What is the database types(Normal, relational)
+Ingredients of Table(Filed(with key), record, value)
+Types of key(Primary, foraign, composite primary)
+DBMS(Definition, Advantage, Disadvantage, Activities)
+Database relation(one to one, one to many., many to many)
+Sorting(types) vs Indexing()
+Data Security(Encryption) caesar code(Learncryptography)
+Query(And types)
+
+SHOW DATABASES; to show existing databases
+CREATE DATABASE college; to create database
+DROP DATABASE college; to delete database
+
+CREATE TABLE student (
+    Roll int,
+    Name varchar(15),
+    Gender varchar(10),
+    Age int(5),
+    GPA double(3, 2),
+    City varchar(15),
+    PRIMARY KEY(Roll)
+);

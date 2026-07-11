@@ -55,3 +55,21 @@ SELECT Name, Roll FROM student_details;
 
 // Select whole table use asterisk (*)
 SELECT * FROM student_details;
+
+// Find distinct value from a field of table
+SELECT DISTINCT City FROM student_details;
+
+// It will show only five data
+SELECT * FROM student_details LIMIT 5;
+
+// It skip first 2 data and show 3 data
+SELECT * FROM student_details LIMIT 2 3;
+
+// Sort by Name in Ascending
+SELECT Name FROM student_details ORDER BY Name;
+
+// Sort by Name in Descending Order
+SELECT Name FROM student_details ORDER BY Name DESC;
+
+// You can sort by Based on multiple GPA
+SELECT Name, Roll, GPA FROM student_details ORDER BY Name, GPA DESC;

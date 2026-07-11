@@ -40,3 +40,18 @@ VALUES
 (103, 'Imtiaz', 'Male', 18, 3.44, 'Lakshmipur'), (104, 'Sajjad', 'Male', 18, 3.45, 'Lakshmipur'),
 (105, 'Hossain', 'Male', 18, 3.56, 'Lakshmipur'), (106, 'Imtiaz', 'Male', 18, 3.23, 'Lakshmipur');
 
+Here is DDL(Data Definition Language) => CREATE, ALTER, DROP 
+DML(Data Manipulation Language) => INSERT, SELECT, UPDATE, DELETE
+
+
+ To Data traverse for single Column(Structure)
+SELECT field FROM table_name;
+
+// To Data traverse for single Column
+SELECT Name FROM student_details;
+
+// You can traverse multiple filed of a table
+SELECT Name, Roll FROM student_details;
+
+// Select whole table use asterisk (*)
+SELECT * FROM student_details;

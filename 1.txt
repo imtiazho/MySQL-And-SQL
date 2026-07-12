@@ -79,3 +79,15 @@ SELECT 5 * 3;
 SELECT 5 + 3;
 SELECT 5 / 3;
 SELECT 5 % 3;
+
+// Search data based on certain conditions
+SELECT City from student_details WHERE Gender='Female';
+
+// Search, Remove duplicate and sort by City
+SELECT DISTINCT City from student_details WHERE Gender='Male' ORDER BY City;
+
+// Search by age
+SELECT * from student_details WHERE Age='19';
+
+// Search by comparison operator
+SELECT * from student_details WHERE Age < 19;

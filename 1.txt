@@ -106,3 +106,26 @@ SELECT * FROM student_details WHERE Gender='Male' AND GPA >= 3.50;
 
 // Nested Condition
 SELECT * FROM student_details WHERE City='Lakshmipur' AND (Gender='Male' OR GPA >= 3.50);
+
+// Nested OR
+SELECT * FROM `student_details` WHERE City='Dhaka' OR City='Barishal';
+
+// IN Operator
+SELECT * FROM `student_details` WHERE City IN ('Dhaka', 'Barishal');
+
+// NOT IN Operator
+SELECT * FROM `student_details` WHERE City NOT IN ('Dhaka', 'Barishal');
+
+// LIKE Operator start with ""
+SELECT * FROM `student_details` WHERE Name LIKE 'T%';
+
+// LIKE Operator end with ""
+SELECT * FROM `student_details` WHERE Name LIKE '%r';
+
+// LIKE Operator include ""
+SELECT * FROM `student_details` WHERE Name LIKE '%ba%';
+
+SELECT * FROM `student_details` WHERE Name LIKE '__b%';
+
+SELECT * FROM `student_details` WHERE Name LIKE '%b__';
+

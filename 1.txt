@@ -73,3 +73,9 @@ SELECT Name FROM student_details ORDER BY Name DESC;
 
 // You can sort by Based on multiple GPA
 SELECT Name, Roll, GPA FROM student_details ORDER BY Name, GPA DESC;
+
+// Operator
+SELECT 5 * 3;
+SELECT 5 + 3;
+SELECT 5 / 3;
+SELECT 5 % 3;

@@ -91,3 +91,18 @@ SELECT * from student_details WHERE Age='19';
 
 // Search by comparison operator
 SELECT * from student_details WHERE Age < 19;
+
+// Search data with and operator
+SELECT Roll, Name, GPA FROM student_details WHERE Roll BETWEEN 102 AND 105;
+
+// Search without != operator
+SELECT Roll, Name, GPA FROM student_details WHERE Roll != 103;
+
+// Or Operator 
+SELECT * FROM student_details WHERE Gender='Male' OR GPA >= 3.50;
+
+// AND Operator
+SELECT * FROM student_details WHERE Gender='Male' AND GPA >= 3.50;
+
+// Nested Condition
+SELECT * FROM student_details WHERE City='Lakshmipur' AND (Gender='Male' OR GPA >= 3.50);

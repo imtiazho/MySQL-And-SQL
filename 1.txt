@@ -205,3 +205,13 @@ SELECT TRUNCATE(LOG(2), 2);
 SELECT RAND();
 
 SELECT EXP(2);
+
+
+============ Group Or Aggregate Function ============
+
+SELECT COUNT(*) from  student_details;
+SELECT MAX(GPA) from  student_details;
+SELECT MIN(GPA) from student_details;
+SELECT SUM(Salay), AVG(Salay) from teachers;
+SELECT MIN(GPA) FROM student_details WHERE Gender='Male';
+

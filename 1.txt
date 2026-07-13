@@ -167,7 +167,41 @@ WHERE ID=1002
 UPDATE teachers SET Salay=13000
 WHERE ID=1002;
 
+UPDATE teachers SET Salay= Salay + 2000
+WHERE Salay > 18000;
+
+================= Delete Statement ===================
+DELETE FROM teachers WHERE ID=1002;
+
+DELETE FROM teachers WHERE ID > 1002;
 
 
+================= Upper and Lower Function ============
+SELECT UPPER('i am Imtiaz');
 
+SELECT LOWER('IM IMTIAZ');
 
+SELECT UPPER(City) FROM student_details;
+
+SELECT UPPER(City) AS CityInUpperCase FROM student_details;
+
+============ Function ============
+SELECT CONCAT('Wel', 'come');
+
+SELECT CONCAT(Name, ' is ', Age,  ' years old') FROM student_details;
+
+SELECT GREATEST(10, 9, 2);
+
+SELECT LEAST(10, 9, 2);
+
+SELECT POW(2,3);
+
+SELECT LOG(2);
+
+SELECT TRUNCATE(10.256, 2); 
+
+SELECT TRUNCATE(LOG(2), 2);
+
+SELECT RAND();
+
+SELECT EXP(2);

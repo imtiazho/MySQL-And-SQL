@@ -150,8 +150,22 @@ CREATE TABLE teachers (
     PRIMARY KEY(ID)
 );
 
+// Insert data into table
+INSERT INTO teachers (ID, Name, Salay) Values(1000, 'Alak', 20000);
 
+// Insert with out ID but it automatic Increment it value by one
+INSERT INTO teachers (Name, Salay) Values('Alak', 20000);
 
+// Insert without salary and it will work because we didnt make it NOT NULL
+INSERT INTO teachers (Name) Values('Dlak');
+
+================= Update Statement ===================
+
+UPDATE teachers SET Salay=12000
+WHERE ID=1002
+
+UPDATE teachers SET Salay=13000
+WHERE ID=1002;
 
 
 

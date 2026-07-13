@@ -129,3 +129,31 @@ SELECT * FROM `student_details` WHERE Name LIKE '__b%';
 
 SELECT * FROM `student_details` WHERE Name LIKE '%b__';
 
+// As keyword
+SELECT Roll as ID, Name as 'First Name' FROM student_details ;
+
+
+// Again create table without constraint
+SELECT Roll as ID, Name as 'First Name' FROM student_details;
+
+// Again INSERT Data without constraint
+INSERT INTO teachers (ID, Name) VALUES(1000, 'Alak');
+
+// Insert only value then others field will filled with NULL
+INSERT INTO teachers (Name) VALUES('Plak');
+
+// Crate Table with constraint 
+CREATE TABLE teachers (
+	ID int NOT NULL AUTO_INCREMENT,
+    Name varchar(15) NOT NULL,
+    Salay double(10, 2),
+    PRIMARY KEY(ID)
+);
+
+
+
+
+
+
+
+

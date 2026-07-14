@@ -215,3 +215,9 @@ SELECT MIN(GPA) from student_details;
 SELECT SUM(Salay), AVG(Salay) from teachers;
 SELECT MIN(GPA) FROM student_details WHERE Gender='Male';
 
+
+============ Sub Query ==================
+SELECT * FROM teachers WHERE Salay > (SELECT AVG(Salay) FROM teachers);
+
+============ Alter Statement ==================
+

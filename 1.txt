@@ -256,8 +256,7 @@ SELECT students.Roll, students.Name, students.Gender, students.Age, result.GPA F
 ON students.Roll = result.Roll;
 
 =============== INNER JOIN ===============
-
-
+SELECT students.Roll, result.GPA FROM students INNER JOIN result ON students.Roll = result.Roll;
 
 
 

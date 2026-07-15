@@ -248,3 +248,21 @@ TRUNCATE TABLE teachers;
 INSERT INTO students (Name, Gender, Age) 
 VALUES('A Fahim', 'Male', 11), ('Mahim', 'Male', 12), ('Kumi', 'Female', 34), ('Fariha', 'Female', 17);
 
+// Joining
+SELECT students.Roll, Name, Gender, Age, GPA FROM students, result WHERE students.Roll = result.Roll;
+
+=============== JOINING Clause ===============
+SELECT students.Roll, students.Name, students.Gender, students.Age, result.GPA FROM students JOIN result 
+ON students.Roll = result.Roll;
+
+=============== INNER JOIN ===============
+
+
+
+
+
+
+
+
+
+

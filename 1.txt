@@ -220,4 +220,31 @@ SELECT MIN(GPA) FROM student_details WHERE Gender='Male';
 SELECT * FROM teachers WHERE Salay > (SELECT AVG(Salay) FROM teachers);
 
 ============ Alter Statement ==================
+// Add 
+ALTER TABLE teachers ADD Area varchar(10);
+
+// Rename Column 
+ALTER TABLE teachers CHANGE Dept Department varchar(10);
+
+// DROP Column
+ALTER TABLE teachers DROP COLUMN Department;
+
+// Update
+UPDATE teachers SET Area='Dhanmondi' WHERE ID=1001;
+
+============== Group By Clause ================
+SELECT Area, SUM(Salay) FROM teachers GROUP BY Area;
+
+// In sorted Order
+SELECT Area, SUM(Salay) FROM teachers 
+GROUP BY Area 
+ORDER BY SUM(Salay) DESC;
+
+=============== TRUNCATE Table ===============
+// It clear all the data from column
+TRUNCATE TABLE teachers;
+
+=============== JOINING Table ===============
+INSERT INTO students (Name, Gender, Age) 
+VALUES('A Fahim', 'Male', 11), ('Mahim', 'Male', 12), ('Kumi', 'Female', 34), ('Fariha', 'Female', 17);
 

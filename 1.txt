@@ -258,10 +258,36 @@ ON students.Roll = result.Roll;
 =============== INNER JOIN ===============
 SELECT students.Roll, result.GPA FROM students INNER JOIN result ON students.Roll = result.Roll;
 
+=============== LEFT AND RIGHT JOIN ===============
+SELECT students.Roll, result.GPA FROM students LEFT JOIN result ON students.Roll = result.Roll;
 
+SELECT students.Roll, result.GPA FROM students RIGHT JOIN result ON students.Roll = result.Roll;
 
+=============== UNION AND UNION ALL ===============
+SELECT Roll FROM students UNION SELECT Roll FROM result;
 
+// All
+SELECT Roll FROM students UNION ALL SELECT Roll FROM result;
 
+=============== VIEW ===============
+// CREATE
+CREATE VIEW viewTable AS 
+SELECT Roll, FROM student;
 
+// SHOW
+SELECT * FROM viewtable;
 
+// EDIT viewTable
+UPDATE viewtable SET Name='B Bro' WHERE Roll = 102;
 
+// INSERT and Delete are same to table
+
+=============== Date & Time ===============
+SELECT CURRENT_DATE();
+SELECT CURRENT_TIME();
+SELECT NOW();
+SELECT ADDDATE('2026-7-17', INTERVAL 5 DAY);
+SELECT SUBDATE('2026-7-17', INTERVAL 5 DAY);
+SELECT MAKEDATE(2026, 5);
+SELECT DAYNAME('2026-7-17');
+SELECT MONTHNAME('2026-7-17');

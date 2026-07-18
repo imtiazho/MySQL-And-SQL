@@ -1,11 +1,27 @@
-What is the database types(Normal, relational)
-Ingredients of Table(Filed(with key), record, value)
-Types of key(Primary, foraign, composite primary)
-DBMS(Definition, Advantage, Disadvantage, Activities)
-Database relation(one to one, one to many., many to many)
-Sorting(types) vs Indexing()
-Data Security(Encryption) caesar code(Learncryptography)
-Query(And types)
+==== What is the database types? (Non - Relational, Relational) ====
+
+Relational Databases (SQL) organize data into strict, predefined tables made of rows and columns, linking different datasets together through shared keys. This structured architecture ensures exceptional data integrity and transaction accuracy, making it ideal for systems like financial tracking or user authentication where data consistency is non-negotiable. For example, a relational setup stores user profiles in one table and purchases in another, using a customer identification number to stitch them together during a query. Popular options in this category include PostgreSQL and MySQL.
+
+Non-Relational Databases (NoSQL) ditch rigid tables in favor of flexible data structures like JSON-style documents, key-value stores, or graphs. Because they lack a fixed schema, they allow developers to nest related information directly inside a single record and easily scale data horizontally across multiple servers. This adaptability makes them perfect for rapidly changing projects, real-time dashboards, and unstructured data streams. For example, a document database like MongoDB stores a user's profile information and their entire history of purchases inside a single, self-contained file.
+
+
+==== Ingredients of Table(Filed(with key), record, value) ====
+
+Fields (Columns) define the blueprint and structure of the table. Every field has a specific name and data type (like text, number, or date) that dictates what kind of information it can hold. Crucially, fields can be designated as keys to establish order and relationships. For example, a Primary Key (like student_id) acts as a unique identifier ensuring no two entries are identical, while a Foreign Key links a field in one table to the primary key of another table to connect the data.
+
+Records (Rows) represent a single, complete item or entry within that table structure. A record is a horizontal collection of fields that gathers all the related pieces of information about one specific entity. For instance, in a student directory table, one single row represents everything about a student named Alice—containing her specific ID, her name, and her email address.
+
+Values (Cells) are the actual, individual pieces of raw data sitting at the intersection of a specific field and a specific record. A value is the literal content stored inside a single cell of the table grid. For example, if you look at the record for Alice and look down the "Email" column, the text string alice@email.com is the specific value stored in that cell.
+
+==== Types of key(Primary, Foraign, Composite primary) ====
+
+Primary Keys are the absolute foundation of table identity. A primary key is a field that must contain a completely unique value for every single row, and it can never be empty (null). Its sole job is to guarantee that every record in the table can be instantly pinpointed without any ambiguity. For example, in a user database, a field named user_id serves as the primary key; even if two users share the exact name "John Doe," their distinct user_id values (like 101 and 102) keep their accounts separated.
+
+Foreign Keys are the bridges that connect tables together. A foreign key is a field in one table that references the primary key of another table, creating a direct relationship between them. This enforces data integrity by ensuring you can't link to something that doesn't exist. For example, in an orders table, you might have an order_id as its primary key, but you would also include a user_id field. That user_id acts as a foreign key, pointing back to the users table to identify exactly which customer placed that order.
+
+Composite Primary Keys come into play when a single field isn't enough to guarantee uniqueness, requiring a combination of two or more fields to form the primary key. While the individual fields within a composite key can repeat across different rows, the combination of their values must be entirely unique. For example, in a student enrollment system, an enrollments table might use a composite primary key made of student_id and course_id. A student can take multiple courses, and a course can have multiple students, but the specific pair—like student 101 taking course CS50—can only appear once in the table.
+
+==========
 
 SHOW DATABASES; to show existing databases
 CREATE DATABASE college; to create database
